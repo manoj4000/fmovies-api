@@ -60,7 +60,7 @@ def recommendMovies(type):
         try:
             a = item.find('a')
             href = a.get('href')
-            link = f'https://fmovies.to{href}'
+            link = f'https://ww1.fmovieszfree.com{href}'
         except Exception as e:
             link = str(e)
 
@@ -192,7 +192,7 @@ def trending(type):
         try:
             a = item.find('a')
             href = a.get('href')
-            link = f'https://fmovies.to{href}'
+            link = f'https://ww1.fmovieszfree.com{href}'
         except Exception as e:
             link = str(e)
 
