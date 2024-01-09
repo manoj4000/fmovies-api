@@ -12,7 +12,7 @@ def getMovies(query, page, proxie):
     try:
         if proxie == 'true':
             if page != None:
-                base_url = f'https://fmovies.to/search?keyword={query}&page={page}'
+                base_url = f'https://ww1.fmovieszfree.com/search?keyword={query}&page={page}'
                 currentPage = page
                 r = proxy.Proxy_Request(url=base_url, request_type='get')
                 soup = BeautifulSoup(r.content, 'lxml')
@@ -23,7 +23,7 @@ def getMovies(query, page, proxie):
                 soup = BeautifulSoup(r.content, 'lxml')
         else:
             if page != None:
-                base_url = f'https://fmovies.to/search?keyword={query}&page={page}'
+                base_url = f'https://ww1.fmovieszfree.com/search?keyword={query}&page={page}'
                 currentPage = page
                 soup = BeautifulSoup(requests.get(base_url).content, 'lxml')
             else:
@@ -43,7 +43,7 @@ def getMovies(query, page, proxie):
         try:
             a = item.find('a')
             href = a.get('href')
-            link = f'https://fmovies.to{href}'
+            link = f'ww1.fmovieszfree.com{href}'
         except Exception as e:
             link = str(e)
 
