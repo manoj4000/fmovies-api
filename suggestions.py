@@ -12,7 +12,7 @@ def getSuggestions(suggest, proxie):
 
     if proxie == 'true':
         try:
-            base_url = f'https://fmovies.to/home'
+            base_url = f'https://ww1.fmovieszfree.com/home'
             r = proxy.Proxy_Request(url=base_url, request_type='get')
             soup = BeautifulSoup(r.content, 'lxml')
         except requests.exceptions.RequestException as e:
