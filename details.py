@@ -130,7 +130,7 @@ def getSimilarSuggstions(soup):
             try:
                 a = row.find('a')
                 href = a.get('href')
-                link = f'https://fmovies.to{href}'
+                link = f'https://www1.fmoviesz.com{href}'
             except Exception as e:
                 link = str(e)
 
